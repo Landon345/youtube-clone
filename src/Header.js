@@ -8,13 +8,15 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import Avatar from "@material-ui/core/Avatar";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ openSidebar }) {
   const [inputSearch, setInputSearch] = useState("");
 
   return (
     <div className="header">
       <div className="header__left">
-        <MenuIcon />
+        <div onClick={openSidebar} className="header__menuIcon">
+          <MenuIcon />
+        </div>
         <Link to="/">
           <img
             className="header__logo"
