@@ -9,6 +9,15 @@
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__menuIcon {
+  cursor: pointer;
+}
+
 .header__logo {
   height: 25px;
   object-fit: contain;
